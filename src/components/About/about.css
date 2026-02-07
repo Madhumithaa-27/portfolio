@@ -1,0 +1,40 @@
+.about{
+  padding:100px 10%;
+  background:#0b0b0f;
+  color:white;
+}
+
+.about-container{
+  max-width:900px;
+}
+
+.about h2{
+  font-size:42px;
+ background:linear-gradient(45deg,#ff4fd8,#ffd700);
+  margin-bottom:20px;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.about p{
+  font-size:18px;
+  line-height:1.7;
+  margin-bottom:18px;
+  color:#ccc;
+}
+
+.resume-btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 28px;
+  background:linear-gradient(45deg,#ff4fd8,#ffd700);
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:8px;
+  transition:0.3s;
+}
+
+.resume-btn:hover{
+  transform:scale(1.05);
+}

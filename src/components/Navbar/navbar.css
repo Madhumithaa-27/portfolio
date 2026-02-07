@@ -1,0 +1,31 @@
+.navbar{
+position:fixed;
+width:100%;
+top:0;
+display:flex;
+justify-content:space-between;
+padding:20px 10%;
+background:#020617;
+z-index:1000;
+}
+
+
+.logo{
+color:linear-gradient(45deg,#ff4fd8,#ffd700);
+background:linear-gradient(45deg,#ff4fd8,#ffd700);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+
+.navbar ul{
+    display:flex;
+gap:30px;
+list-style:none;
+}
+
+
+.navbar a{
+color:white;
+text-decoration:none;
+}

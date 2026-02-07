@@ -1,10 +1,19 @@
 body{
-    margin:0;
-    font-family:'poppins',sans-serif;
-    background: black;
-    color:white;
+margin:0;
+font-family: 'Poppins', sans-serif;
+background:#0f172a;
+color:white;
 }
-a{
-    text-decoration:none;
-    color:inherit;
+
+
+section{
+padding:80px 10%;
+}
+
+
+h2{
+text-align:center;
+font-size:40px;
+margin-bottom:40px;
+color:#38bdf8;
 }
