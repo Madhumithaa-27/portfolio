@@ -1,0 +1,10 @@
+body{
+    margin:0;
+    font-family:'poppins',sans-serif;
+    background: black;
+    color:white;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}

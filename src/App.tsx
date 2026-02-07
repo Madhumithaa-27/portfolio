@@ -5,12 +5,16 @@ function App() {
       <nav style={{
         display:"flex",
         justifyContent:"space-between",
+        alignItems:"center",
         padding:"20px 40px",
         background:"#5a2158",
+        borderBottom:"1px solid #222",
+        position:"sticky",
+        top:0,
         color:"white"
       }}>
-        <h2>Madhumithaa</h2>
-        <div>
+        <h2 style={{color:"#6c0e3d"}}>Madhumithaa</h2>
+        <div style={{display:"flex",gap:"30px"}}>
           <a href="#about" style={{color:"white",
             textDecoration:"none"
           }}>About </a>
@@ -62,39 +66,51 @@ function App() {
         <h2 style={{ textAlign: "center" }}>Technical Skills</h2>
 
         <div style={{ maxWidth: "800px", margin: "auto", marginTop: "20px" }}>
-          <p><b>Programming:</b> Java, C, Python</p>
-          <p><b>Frontend:</b> HTML, CSS, JavaScript, React, Bootstrap</p>
-          <p><b>Cloud & DevOps:</b> AWS, Docker, Git, Jenkins, Linux</p>
-          <p><b>AI/ML:</b> Machine Learning, Deep Learning, CNN, LSTM</p>
-          <p><b>Database:</b> SQL</p>
+          <p style={{color:"#ffb3d9"}}><b>Programming:</b> Java, C, Python</p>
+          <p style={{color:"#ffb3d9"}}><b>Frontend:</b> HTML, CSS, JavaScript, React, Bootstrap</p>
+          <p style={{color:"#ffb3d9"}}><b>Cloud & DevOps:</b> AWS, Docker, Git, Jenkins, Linux</p>
+          <p style={{color:"#ffb3d9"}}><b>AI/ML:</b> Machine Learning, Deep Learning, CNN, LSTM</p>
+          <p style={{color:"#ffb3d9"}}><b>Database:</b> SQL</p>
         </div>
       </section>
 
 
       {/* PROJECTS */}
-      <section id="projects" style={{ marginTop: "60px", padding: "40px" }}>
-        <h2 style={{ textAlign: "center" }}>Projects</h2>
+<section id="projects" style={{ marginTop:"80px", padding:"60px" }}>
+  <h2 style={{textAlign:"center"}}>Projects</h2>
 
-        <div style={{ maxWidth: "900px", margin: "auto" }}>
-          <h3>AI-Based Cat Emotion Recognition</h3>
-          <p>
-            Built deep learning models using CNN and LSTM to detect cat emotions from image and audio. 
-            Developed a Streamlit app for real-time prediction and insights.
-          </p>
+  <div style={{
+    display:"flex",
+    justifyContent:"center",
+    gap:"30px",
+    flexWrap:"wrap",
+    marginTop:"40px"
+  }}>
 
-          <h3>AI Cyberbullying Detection Platform</h3>
-          <p>
-            Developed BERT-based detection system with Gemini API integration to identify and prevent 
-            toxic content. Deployed on AWS EC2.
-          </p>
+    {/* Project Card 1 */}
+    <div style={card}>
+      <h3>Cat Emotion AI</h3>
+      <p>Deep learning model using CNN + LSTM to detect cat emotions.</p>
+      <a href="https://github.com/Madhumithaa-27" target="_blank">GitHub</a>
+    </div>
 
-          <h3>AutoSys Care</h3>
-          <p>
-            Automated Linux system maintenance toolkit using Bash scripting with system health 
-            monitoring and cron jobs.
-          </p>
-        </div>
-      </section>
+    {/* Project Card 2 */}
+    <div style={card}>
+      <h3>Cyberbullying Detection</h3>
+      <p>BERT + Gemini AI platform deployed on AWS EC2.</p>
+      <a href="https://github.com/Madhumithaa-27" target="_blank">GitHub</a>
+    </div>
+
+    {/* Project Card 3 */}
+    <div style={card}>
+      <h3>AutoSys Care</h3>
+      <p>Linux automation toolkit using bash & cron jobs.</p>
+      <a href="https://github.com/Madhumithaa-27" target="_blank">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
 
 
       {/* CODING PROFILES */}
@@ -110,7 +126,7 @@ function App() {
       <section id="contact" style={{
         textAlign: "center",
         marginTop: "60px",
-        background: "#233f81",
+        background: "#000000",
         color: "white",
         padding: "40px"
       }}>
@@ -122,6 +138,13 @@ function App() {
 
     </div>
   );
+}
+const card = {
+  background:"#111",
+  padding:"25px",
+  width:"280px",
+  borderRadius:"10px",
+  boxShadow:"0 0 15px rgba(255,77,166,0.3)"
 }
 
 export default App;
