@@ -1,31 +1,49 @@
 .navbar{
-position:fixed;
-width:100%;
-top:0;
 display:flex;
 justify-content:space-between;
-padding:20px 10%;
-background:#020617;
+align-items:center;
+padding:18px 60px;
+background:black;
+position:sticky;
+top:0;
 z-index:1000;
 }
 
-
 .logo{
-color:linear-gradient(45deg,#ff4fd8,#ffd700);
-background:linear-gradient(45deg,#ff4fd8,#ffd700);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+color:#ff4fd8;
+font-size:24px;
 }
 
+.portfolio{
+color:#ffd700;
+}
 
 .navbar ul{
-    display:flex;
-gap:30px;
+display:flex;
+gap:40px;
 list-style:none;
 }
 
-
-.navbar a{
+.navbar ul li a{
 color:white;
 text-decoration:none;
+font-size:18px;
+transition:0.3s;
+}
+
+.navbar ul li a:hover{
+color:#ff4fd8;
+}
+
+/* 📱 mobile responsive */
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+gap:10px;
+padding:15px;
+}
+
+.navbar ul{
+gap:20px;
+}
 }

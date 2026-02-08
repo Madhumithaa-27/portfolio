@@ -28,7 +28,7 @@
 }
 
 .skill-card:hover{
-  transform:translateY(-8px);
+  transform:translateY(-10px);
   border:1px solid #ff4fa3;
 }
 

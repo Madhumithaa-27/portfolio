@@ -1,5 +1,102 @@
 .projects{
-    padding:100px 10%;
-    background:#000000;
-    color:rgb(236, 231, 234);
+padding:100px 8%;
+background:#000;
+color:white;
+min-height:100vh;
+text-align:center;
+}
+
+.projects h2{
+font-size:42px;
+margin-bottom:60px;
+}
+
+/* GRID */
+.projects{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.projects .project-wrapper{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+width:100%;
+max-width:1200px;
+}
+
+/* CARD */
+.project-card{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.15);
+padding:30px;
+border-radius:18px;
+text-align:left;
+backdrop-filter:blur(12px);
+transition:0.4s;
+box-shadow:0 0 25px rgba(255,0,200,0.08);
+position:relative;
+overflow:hidden;
+}
+
+/* hover glow */
+.project-card:hover{
+transform:translateY(-12px) scale(1.02);
+box-shadow:0 0 45px rgba(255,0,200,0.35);
+border:1px solid #ff4fd8;
+}
+
+/* title */
+.project-card h3{
+color:#ff4fd8;
+margin-bottom:15px;
+font-size:20px;
+}
+
+/* text */
+.project-card p{
+color:#ccc;
+line-height:1.6;
+margin-bottom:10px;
+}
+
+/* gold top line */
+.project-card::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:3px;
+background:linear-gradient(90deg,#ff4fd8,#ffd700);
+}
+.git-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+color:black;
+background:linear-gradient(45deg,#ff4fd8,#ffd700);
+transition:0.3s;
+}
+
+/* remove blue & purple link colors */
+.git-btn:link{
+color:black;
+}
+
+.git-btn:visited{
+color:black;
+}
+
+.git-btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 15px #ff4fd8;
+}
+
+.git-btn:active{
+color:black;
 }
